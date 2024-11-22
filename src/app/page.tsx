@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Image from "next/image"
 import { Github, Linkedin, Mail } from 'lucide-react'
@@ -10,6 +12,7 @@ import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { ThemeToggle } from "@/components/theme-toggle"
 import MundoWrapper from "@/components/mundo-wrapper"
+import { useLanguage } from "@/contexts/LanguageContext"
 
 const content = {
   en: {
@@ -59,6 +62,9 @@ function ProjectCard({ title, description, image }: { title: string; description
 }
 
 export default function Home() {
+  const { language } = useLanguage()
+  const t = content[language]
+
   return (
     <SidebarProvider>
       <div className="flex min-h-screen bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
@@ -67,7 +73,7 @@ export default function Home() {
           <main className="flex-1 p-8">
             <header className="mb-12 text-center">
               <h1 className="text-4xl font-bold">Alejandro Ponce</h1>
-              <p className="text-xl mt-2">{content.en.title}</p>
+              <p className="text-xl mt-2">{t.title}</p>
             </header>
 
             <div className="fixed top-4 right-4 z-50 flex space-x-2">
@@ -80,25 +86,25 @@ export default function Home() {
             </section>
 
             <section id="projects" className="mb-12">
-              <h2 className="text-2xl font-semibold mb-4">{content.en.projects}</h2>
+              <h2 className="text-2xl font-semibold mb-4">{t.projects}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <ProjectCard
-                  title={content.en.ecommerce.title}
-                  description={content.en.ecommerce.description}
+                  title={t.ecommerce.title}
+                  description={t.ecommerce.description}
                   image="/placeholder.svg?height=200&width=300"
                 />
                 <ProjectCard
-                  title={content.en.taskManager.title}
-                  description={content.en.taskManager.description}
+                  title={t.taskManager.title}
+                  description={t.taskManager.description}
                   image="/placeholder.svg?height=200&width=300"
                 />
               </div>
             </section>
 
             <section id="about" className="mb-12">
-              <h2 className="text-2xl font-semibold mb-4">{content.en.aboutMe}</h2>
-              <p className="text-lg mb-4">{content.en.about}</p>
-              <h3 className="text-xl font-semibold mb-2">{content.en.skills}</h3>
+              <h2 className="text-2xl font-semibold mb-4">{t.aboutMe}</h2>
+              <p className="text-lg mb-4">{t.about}</p>
+              <h3 className="text-xl font-semibold mb-2">{t.skills}</h3>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary" className="text-lg py-1 px-3">Next.js</Badge>
                 <Badge variant="secondary" className="text-lg py-1 px-3">Django</Badge>
@@ -108,7 +114,7 @@ export default function Home() {
             </section>
 
             <section id="contact">
-              <h2 className="text-2xl font-semibold mb-4">{content.en.contactMe}</h2>
+              <h2 className="text-2xl font-semibold mb-4">{t.contactMe}</h2>
               <div className="flex justify-center space-x-4">
                 <Button variant="outline" size="icon">
                   <a href="https://github.com/alejandroponce" target="_blank" rel="noopener noreferrer">
