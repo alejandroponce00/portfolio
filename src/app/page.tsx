@@ -16,7 +16,7 @@ import MundoWrapper from "@/components/mundo-wrapper"
 const content = {
   en: {
     title: "Full Stack Web Developer",
-    about: "I'm a passionate full-stack web developer with expertise in modern web technologies. I love creating efficient, scalable, and user-friendly web applications.",
+    about: "Hello, I am a fullstack developer with experience creating high-performance web applications. My focus is on building attractive and efficient web solutions using a variety of cutting-edge technologies. My goal is to combine design and functionality to deliver exceptional digital experiences.",
     projects: "Projects",
     aboutMe: "About Me",
     skills: "Skills",
@@ -24,21 +24,27 @@ const content = {
     visitWebsite: "Visit Website",
     viewCode: "View Code",
     halloween: {
-      title: "E-commerce Platform",
-      description: "A full-stack e-commerce solution using Next.js, Django, and PostgreSQL.",
+      title: "Halloween Wallpapers <Hackaton Cloudinary>",
+      description: "change the background of your photo for a halloween one, made with nextjs, tailwind and cloudinari",
       website: "https://halloween-photo.vercel.app/",
       github: "https://github.com/alejandroponce00/halloween_photo",
     },
-    taskManager: {
-      title: "Task Management App",
-      description: "A responsive task management application built with Next.js and Tailwind CSS.",
-      website: "https://task-manager-example.com",
-      github: "https://github.com/alejandroponce/task-manager-app",
+    turnos: {
+      title: "Manage shifts in a mechanical workshop: record vehicles, owners, repairs and entry hours. Frontend deployed in vercel and backend in railway ",
+      description: "A responsive task management app built with Next.js and Tailwind CSS.",
+      website: "https://taller-frontend-beta.vercel.app/",
+      github: "https://github.com/alejandroponce00/taller_frontend",
+    },
+    panel_mecanicos: {
+      title: "Mechanical Panel",
+      description: "This is another front connected to the back of turnos_taller. It is designed to be used by mechanics",
+      website: "https://panel-mecanico.vercel.app/",
+      github: "https://github.com/alejandroponce00/panel_mecanico",
     },
   },
   es: {
     title: "Desarrollador Web Full Stack",
-    about: "Soy un desarrollador web full-stack apasionado con experiencia en tecnologías web modernas. Me encanta crear aplicaciones web eficientes, escalables y fáciles de usar.",
+    about: " Hola, soy un desarrollador fullstack con experiencia en la creación de aplicaciones web de alto rendimiento.Mi enfoque se centra en la construcción de soluciones web atractivas y eficientes utilizando una variedad de tecnologías de vanguardia. Mi objetivo es combinar diseño y funcionalidad para ofrecer experiencias digitales excepcionales.",
     projects: "Proyectos",
     aboutMe: "Sobre Mí",
     skills: "Habilidades",
@@ -51,11 +57,17 @@ const content = {
       website: "https://halloween-photo.vercel.app/",
       github: "https://github.com/alejandroponce00/halloween_photo",
     },
-    taskManager: {
-      title: "Aplicación de Gestión de Tareas",
+    turnos: {
+      title: "Gestiona turnos en un taller mecánico: registra vehículos,dueños,reparaciones y horas de ingreso. Frontend desplegado en vercel y backend en railway ",
       description: "Una aplicación de gestión de tareas responsiva construida con Next.js y Tailwind CSS.",
-      website: "https://task-manager-example.com",
-      github: "https://github.com/alejandroponce/task-manager-app",
+      website: "https://taller-frontend-beta.vercel.app/",
+      github: "https://github.com/alejandroponce00/taller_frontend",
+    },
+    panel_mecanicos: {
+      title: "Panel Mecanicos",
+      description: "Este es otro front conectado al back de turnos_taller.Está pensado para que lo utilicen los mecanicos ",
+      website: "https://panel-mecanico.vercel.app/",
+      github: "https://github.com/alejandroponce00/panel_mecanico",
     },
   },
 }
@@ -127,7 +139,7 @@ function ProjectCard({
             </section>
 
             <section id="projects" className="mb-12">
-              <h2 className="text-2xl font-semibold mb-4">{content.en.projects}</h2>
+              <h2 className="text-2xl font-semibold mb-4">{t.projects}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <ProjectCard
                   title={t.halloween.title}
@@ -139,11 +151,20 @@ function ProjectCard({
                   viewCodeText={t.viewCode}
                 />
                 <ProjectCard
-                  title={t.taskManager.title}
-                  description={t.taskManager.description}
-                  image="/placeholder.svg?height=200&width=300"
-                  websiteUrl={t.taskManager.website}
-                  githubUrl={t.taskManager.github}
+                  title={t.turnos.title}
+                  description={t.turnos.description}
+                  image="/imagenes/taller_front.webp"
+                  websiteUrl={t.turnos.website}
+                  githubUrl={t.turnos.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
+                <ProjectCard
+                  title={t.panel_mecanicos.title}
+                  description={t.panel_mecanicos.description}
+                  image="/imagenes/panel_mecanicos.png"
+                  websiteUrl={t.panel_mecanicos.website}
+                  githubUrl={t.panel_mecanicos.github}
                   visitWebsiteText={t.visitWebsite}
                   viewCodeText={t.viewCode}
                 />
@@ -151,9 +172,9 @@ function ProjectCard({
             </section>
 
             <section id="about" className="mb-12">
-              <h2 className="text-2xl font-semibold mb-4">{content.en.aboutMe}</h2>
-              <p className="text-lg mb-4">{content.en.about}</p>
-              <h3 className="text-xl font-semibold mb-2">{content.en.skills}</h3>
+              <h2 className="text-2xl font-semibold mb-4">{t.aboutMe}</h2>
+              <p className="text-lg mb-4">{t.about}</p>
+              <h3 className="text-xl font-semibold mb-2">{t.skills}</h3>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary" className="text-lg py-1 px-3">Next.js</Badge>
                 <Badge variant="secondary" className="text-lg py-1 px-3">Django</Badge>
@@ -166,19 +187,19 @@ function ProjectCard({
               <h2 className="text-2xl font-semibold mb-4">{content.en.contactMe}</h2>
               <div className="flex justify-center space-x-4">
                 <Button variant="outline" size="icon">
-                  <a href="https://github.com/alejandroponce" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/alejandroponce00" target="_blank" rel="noopener noreferrer">
                     <Github className="h-6 w-6" />
                     <span className="sr-only">GitHub</span>
                   </a>
                 </Button>
                 <Button variant="outline" size="icon">
-                  <a href="https://linkedin.com/in/alejandroponce" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/alberto-alejandro-ponce-2b832926b/" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-6 w-6" />
                     <span className="sr-only">LinkedIn</span>
                   </a>
                 </Button>
                 <Button variant="outline" size="icon">
-                  <a href="mailto:alejandro@example.com">
+                  <a href="mailto:alejandroponce00@gmail.com">
                     <Mail className="h-6 w-6" />
                     <span className="sr-only">Email</span>
                   </a>
@@ -188,9 +209,7 @@ function ProjectCard({
           </main>
         </SidebarInset>
       </div>
-      <footer className="bg-gray-200 dark:bg-gray-800 py-4 text-center">
-        <p>&copy; 2023 Alejandro Ponce. All rights reserved.</p>
-      </footer>
+      
     </SidebarProvider>
   )
 }

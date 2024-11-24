@@ -21,10 +21,13 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <LanguageProvider>
             {children}
+            <footer className="bg-gray-200 dark:bg-gray-800 py-4 text-center">
+        <p>&copy; 2023 Alejandro Ponce. All rights reserved.</p>
+      </footer>
           </LanguageProvider>
         </ThemeProvider>
         <footer className="bg-gray-200 dark:bg-gray-800 py-4 text-center">
-        <p>&copy; 2023 Alejandro Ponce. All rights reserved.</p>
+        <p>&copy; 2024 Alejandro Ponce. All rights reserved.</p>
       </footer>
       </body>
     </html>
