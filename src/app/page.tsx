@@ -49,10 +49,27 @@ const content = {
     },
     clon_spotify: {
       title: "Clon spotify",
-      description: "spotify clone created with nextjs and tailwind"
-          ,
+      description: "spotify clone created with nextjs and tailwind",
       website: "https://clon-spotify-tjoi.vercel.app/",
       github: "https://github.com/alejandroponce00/clon-spotify",
+    },
+    cocinero_virtual: {
+      title: "Virtual Chef <Hackaton Vercel>",
+      description: "Show him the ingredients you have and he will help you cook something, created with nextjs, vercel sdk and perplexity api. Vercel displayed",
+      website: "https://tu-cocinero.vercel.app/",
+      github: "https://github.com/alejandroponce00/tu_cocinero",
+    },
+    chatbot_minecraft: {
+      title: "Minecraft Chatbot  <Hackaton Vercel>",
+      description: "Minecraft chatbot created so my son doesn't have to google minecraft commands and cheats. Made with nextjs, vercel sdk and perplexity api.",
+      website: "https://minecraft-asistente.vercel.app/",
+      github: "https://github.com/alejandroponce00/minecraft_asistente",
+    },
+    clon_twitter: {
+      title: "X Clon (twitter)",
+      description: "Twitter clone created with nextjs and shadcn ",
+      website: "https://twitter-clon-nu.vercel.app//",
+      github: "https://github.com/alejandroponce00/twitter_clon",
     },
   },
   es: {
@@ -90,10 +107,27 @@ const content = {
     },
     clon_spotify: {
       title: "Clon spotify",
-      description: "Clon de Spotify creado con nextjs y taildwind"
-          ,
+      description: "Clon de Spotify creado con nextjs y taildwind",
       website: "https://clon-spotify-tjoi.vercel.app/",
       github: "https://github.com/alejandroponce00/clon-spotify",
+    },
+    cocinero_virtual: {
+      title: "Cocinero Virtual <Hackaton Vercel>",
+      description: "Muestrale los ingredientes que tienes y te ayudará a cocinar algo,creado con nextjs,vercel sdk y api de perplexity. Desplegado en vercel",
+      website: "https://tu-cocinero.vercel.app/",
+      github: "https://github.com/alejandroponce00/tu_cocinero",
+    },
+    chatbot_minecraft: {
+      title: "Chatbot de Minecraft <Hackaton Vercel>",
+      description: "Chatbot de Minecraft creado para que mi hijo no tenga que googlear los comandos y trucos de minecraft.Hecho con nextjs,vercel sdk y api de perplexity.",
+      website: "https://minecraft-asistente.vercel.app/",
+      github: "https://github.com/alejandroponce00/minecraft_asistente",
+    },
+    clon_twitter: {
+      title: "Clon de X (twitter)",
+      description: "Clon de twitter creado con nextjs y shadcn ",
+      website: "https://twitter-clon-nu.vercel.app//",
+      github: "https://github.com/alejandroponce00/twitter_clon",
     },
   },
 }
@@ -209,6 +243,33 @@ function ProjectCard({
                   image="/imagenes/spotify-preview.png"
                   websiteUrl={t.clon_spotify.website}
                   githubUrl={t.clon_spotify.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
+                <ProjectCard
+                  title={t.cocinero_virtual.title}
+                  description={t.cocinero_virtual.description}
+                  image="/imagenes/tu_cocinero.png"
+                  websiteUrl={t.cocinero_virtual.website}
+                  githubUrl={t.cocinero_virtual.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
+                <ProjectCard
+                  title={t.chatbot_minecraft.title}
+                  description={t.chatbot_minecraft.description}
+                  image="/imagenes/minecraft.png"
+                  websiteUrl={t.chatbot_minecraft.website}
+                  githubUrl={t.chatbot_minecraft.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
+                <ProjectCard
+                  title={t.clon_twitter.title}
+                  description={t.clon_twitter.description}
+                  image="/imagenes/twiterclonprev.png"
+                  websiteUrl={t.clon_twitter.website}
+                  githubUrl={t.clon_twitter.github}
                   visitWebsiteText={t.visitWebsite}
                   viewCodeText={t.viewCode}
                 />
