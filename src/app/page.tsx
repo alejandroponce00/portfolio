@@ -30,8 +30,8 @@ const content = {
       github: "https://github.com/alejandroponce00/halloween_photo",
     },
     turnos: {
-      title: "Manage shifts in a mechanical workshop: record vehicles, owners, repairs and entry hours. Frontend deployed in vercel and backend in railway ",
-      description: "A responsive task management app built with Next.js and Tailwind CSS.",
+      title: "Mechanical workshop shifts",
+      description: "Manage shifts in a mechanical workshop: record vehicles, owners, repairs and entry hours. Frontend deployed in vercel and backend in railway ",
       website: "https://taller-frontend-beta.vercel.app/",
       github: "https://github.com/alejandroponce00/taller_frontend",
     },
@@ -40,6 +40,19 @@ const content = {
       description: "This is another front connected to the back of turnos_taller. It is designed to be used by mechanics",
       website: "https://panel-mecanico.vercel.app/",
       github: "https://github.com/alejandroponce00/panel_mecanico",
+    },
+    todo_app: {
+      title: "Todo app",
+      description: "CRUD task application using Next.js and Django. Allows you to create, list, edit and delete tasks with a modern interface thanks to Shadcn",
+      website: "https://client-todo-rho.vercel.app/",
+      github: "https://github.com/alejandroponce00/client_todo",
+    },
+    clon_spotify: {
+      title: "Clon spotify",
+      description: "spotify clone created with nextjs and tailwind"
+          ,
+      website: "https://clon-spotify-tjoi.vercel.app/",
+      github: "https://github.com/alejandroponce00/clon-spotify",
     },
   },
   es: {
@@ -58,8 +71,8 @@ const content = {
       github: "https://github.com/alejandroponce00/halloween_photo",
     },
     turnos: {
-      title: "Gestiona turnos en un taller mecánico: registra vehículos,dueños,reparaciones y horas de ingreso. Frontend desplegado en vercel y backend en railway ",
-      description: "Una aplicación de gestión de tareas responsiva construida con Next.js y Tailwind CSS.",
+      title: "Turnos Taller",
+      description: " Gestiona turnos en un taller mecánico: registra vehículos,dueños,reparaciones y horas de ingreso. Frontend desplegado en vercel y backend en railway ",
       website: "https://taller-frontend-beta.vercel.app/",
       github: "https://github.com/alejandroponce00/taller_frontend",
     },
@@ -68,6 +81,19 @@ const content = {
       description: "Este es otro front conectado al back de turnos_taller.Está pensado para que lo utilicen los mecanicos ",
       website: "https://panel-mecanico.vercel.app/",
       github: "https://github.com/alejandroponce00/panel_mecanico",
+    },
+    todo_app: {
+      title: "Todo app",
+      description: "Aplicación CRUD de tareas usando Next.js y Django.Permite crear, listar, editar y eliminar tareas con una interfaz moderna gracias a Shadcn",
+      website: "https://client-todo-rho.vercel.app/",
+      github: "https://github.com/alejandroponce00/client_todo",
+    },
+    clon_spotify: {
+      title: "Clon spotify",
+      description: "Clon de Spotify creado con nextjs y taildwind"
+          ,
+      website: "https://clon-spotify-tjoi.vercel.app/",
+      github: "https://github.com/alejandroponce00/clon-spotify",
     },
   },
 }
@@ -165,6 +191,24 @@ function ProjectCard({
                   image="/imagenes/panel_mecanicos.png"
                   websiteUrl={t.panel_mecanicos.website}
                   githubUrl={t.panel_mecanicos.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
+                <ProjectCard
+                  title={t.todo_app.title}
+                  description={t.todo_app.description}
+                  image="/imagenes/todoapp.jpg"
+                  websiteUrl={t.todo_app.website}
+                  githubUrl={t.todo_app.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
+                <ProjectCard
+                  title={t.clon_spotify.title}
+                  description={t.clon_spotify.description}
+                  image="/imagenes/spotify-preview.png"
+                  websiteUrl={t.clon_spotify.website}
+                  githubUrl={t.clon_spotify.github}
                   visitWebsiteText={t.visitWebsite}
                   viewCodeText={t.viewCode}
                 />
