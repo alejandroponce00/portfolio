@@ -70,6 +70,35 @@ const content = {
       description: "Twitter clone created with nextjs and shadcn ",
       website: "https://twitter-clon-nu.vercel.app//",
       github: "https://github.com/alejandroponce00/twitter_clon",
+    },Caja_comentarios: {
+      title: "Comment box",
+      description: "Created with django connected to a postgres database and deployed to railway",
+      website: "https://comentariosrender-production.up.railway.app/",
+      github: "https://github.com/alejandroponce00/comentarios_render",
+    },
+    Snake_juego: {
+      title: "Snake(game)",
+      description: "popular snake game created with react and deployed in vercel",
+      website: "https://snake-react-alpha.vercel.app/",
+      github: "https://github.com/alejandroponce00/Snake-react",
+    },
+    ojos: {
+      title: "Eyes of Heaven Art",
+      description: "Page created for a plastic artist and illustrator, displayed on Netlify",
+      website: "https://ojosdecieloarte.netlify.app/",
+      github: "https://github.com/alejandroponce00/ojos-de-cielo",
+    },
+    marvel: {
+      title: "Marvel Api",
+      description: "Page created to consume a marvel api using nextjs and axios",
+      website: "https://ojosdecieloarte.netlify.app/",
+      github: "https://github.com/alejandroponce00/api-marvel",
+    },
+    artesana: {
+      title: "ArteSana Mosaics",
+      description: "Page created for a mosaic artist displayed on github pages",
+      website: "https://alejandroponce00.github.io/ArteSanaMosaicos/",
+      github: "https://github.com/alejandroponce00/ArteSanaMosaicos",
     },
   },
   es: {
@@ -128,6 +157,35 @@ const content = {
       description: "Clon de twitter creado con nextjs y shadcn ",
       website: "https://twitter-clon-nu.vercel.app//",
       github: "https://github.com/alejandroponce00/twitter_clon",
+    },
+   Caja_comentarios: {
+      title: "Caja de comentarios",
+      description: "Creada con django conectada a una base de datos postgres y desplegada en railway",
+      website: "https://comentariosrender-production.up.railway.app/",
+      github: "https://github.com/alejandroponce00/comentarios_render",
+    },
+    Snake_juego: {
+      title: "Snake(juego)",
+      description: "popular juego de la serpiente creado con react y desplegado en vercel",
+      website: "https://snake-react-alpha.vercel.app/",
+      github: "https://github.com/alejandroponce00/Snake-react",
+    },ojos: {
+      title: "Ojos de Cielo Arte",
+      description: "Pagina creada para una artista plastica y dibujante,desplegada en Netlify ",
+      website: "https://ojosdecieloarte.netlify.app/",
+      github: "https://github.com/alejandroponce00/ojos-de-cielo",
+    },
+    marvel: {
+      title: "Marvel Api",
+      description: "Pagina creada para consumir una api de marvel usando nextjs y axios ",
+      website: "https://ojosdecieloarte.netlify.app/",
+      github: "https://github.com/alejandroponce00/api-marvel",
+    },
+    artesana: {
+      title: "ArteSana Mosaicos",
+      description: "Pagina creada para una artista de mosaiquismo desplegada en github pages  ",
+      website: "https://alejandroponce00.github.io/ArteSanaMosaicos/",
+      github: "https://github.com/alejandroponce00/ArteSanaMosaicos",
     },
   },
 }
@@ -270,6 +328,51 @@ function ProjectCard({
                   image="/imagenes/twiterclonprev.png"
                   websiteUrl={t.clon_twitter.website}
                   githubUrl={t.clon_twitter.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
+                <ProjectCard
+                  title={t.Caja_comentarios.title}
+                  description={t.Caja_comentarios.description}
+                  image="/imagenes/coment.png"
+                  websiteUrl={t.Caja_comentarios.website}
+                  githubUrl={t.Caja_comentarios.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
+                <ProjectCard
+                  title={t.Snake_juego.title}
+                  description={t.Snake_juego.description}
+                  image="/imagenes/snake.png"
+                  websiteUrl={t.Snake_juego.website}
+                  githubUrl={t.Snake_juego.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
+                <ProjectCard
+                  title={t.ojos.title}
+                  description={t.ojos.description}
+                  image="/imagenes/vistaprev-ojos.png"
+                  websiteUrl={t.ojos.website}
+                  githubUrl={t.ojos.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
+                <ProjectCard
+                  title={t.marvel.title}
+                  description={t.marvel.description}
+                  image="/imagenes/marvel.png"
+                  websiteUrl={t.marvel.website}
+                  githubUrl={t.marvel.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
+                <ProjectCard
+                  title={t.artesana.title}
+                  description={t.artesana.description}
+                  image="/imagenes/elefante.png"
+                  websiteUrl={t.artesana.website}
+                  githubUrl={t.artesana.github}
                   visitWebsiteText={t.visitWebsite}
                   viewCodeText={t.viewCode}
                 />
