@@ -13,11 +13,11 @@ function SplineComponent() {
 
 export default function Mundo() {
   return (
-    <div className="w-full h-[300px] md:h-[400px] lg:h-[500px]">
+    
       <Suspense fallback={<div>Loading 3D model...</div>}>
         <SplineComponent />
       </Suspense>
-    </div>
+    
   )
 }
 
