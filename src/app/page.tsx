@@ -16,6 +16,8 @@ import MundoWrapper from "@/components/mundo-wrapper"
 const content = {
   en: {
     title: "Full Stack Web Developer",
+    saludo: "Hi, I'm Alejandro Ponce",
+    subtitle:"Full Stack Web Developer",
     about: "Hello, I am a fullstack developer with experience creating high-performance web applications. My focus is on building attractive and efficient web solutions using a variety of cutting-edge technologies. My goal is to combine design and functionality to deliver exceptional digital experiences.",
     projects: "Projects",
     aboutMe: "About Me",
@@ -103,6 +105,8 @@ const content = {
   },
   es: {
     title: "Desarrollador Web Full Stack",
+    saludo: "Hola,soy Alejandro Ponce",
+    subtitle:"Desarrollador Web Full Stack ",
     about: " Hola, soy un desarrollador fullstack con experiencia en la creación de aplicaciones web de alto rendimiento.Mi enfoque se centra en la construcción de soluciones web atractivas y eficientes utilizando una variedad de tecnologías de vanguardia. Mi objetivo es combinar diseño y funcionalidad para ofrecer experiencias digitales excepcionales.",
     projects: "Proyectos",
     aboutMe: "Sobre Mí",
@@ -243,8 +247,8 @@ function ProjectCard({
         <SidebarInset>
           <main className="flex-1 p-8">
             <header className="mb-12 text-center">
-              <h1 className="text-4xl font-bold">Alejandro Ponce</h1>
-              <p className="text-xl mt-2">{content.en.title}</p>
+              <h1 className="text-4xl font-bold">{t.saludo}</h1>
+              <p className="text-xl mt-2">{t.subtitle}</p>
             </header>
 
             <div className="fixed top-4 right-4 z-50 flex space-x-2">
