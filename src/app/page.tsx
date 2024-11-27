@@ -91,7 +91,7 @@ const content = {
     marvel: {
       title: "Marvel Api",
       description: "Page created to consume a marvel api using nextjs and axios",
-      website: "https://ojosdecieloarte.netlify.app/",
+      website: "https://marvel-api-ale.netlify.app/",
       github: "https://github.com/alejandroponce00/api-marvel",
     },
     artesana: {
@@ -178,7 +178,7 @@ const content = {
     marvel: {
       title: "Marvel Api",
       description: "Pagina creada para consumir una api de marvel usando nextjs y axios ",
-      website: "https://ojosdecieloarte.netlify.app/",
+      website: "https://marvel-api-ale.netlify.app/",
       github: "https://github.com/alejandroponce00/api-marvel",
     },
     artesana: {
