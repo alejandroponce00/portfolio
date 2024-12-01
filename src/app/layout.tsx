@@ -26,9 +26,7 @@ export default function RootLayout({
       </footer>
           </LanguageProvider>
         </ThemeProvider>
-        <footer className="bg-gray-200 dark:bg-gray-800 py-4 text-center">
         
-      </footer>
       </body>
     </html>
   )

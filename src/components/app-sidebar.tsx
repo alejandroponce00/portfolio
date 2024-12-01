@@ -16,13 +16,13 @@ import {
 
 const menuItems = {
   en: [
-    { title: "Projects", icon: FileCode2, href: "#projects" },
     { title: "About Me", icon: User, href: "#about" },
+    { title: "Projects", icon: FileCode2, href: "#projects" },
     { title: "Contact Me", icon: Mail, href: "#contact" },
   ],
   es: [
-    { title: "Proyectos", icon: FileCode2, href: "#projects" },
     { title: "Sobre Mí", icon: User, href: "#about" },
+    { title: "Proyectos", icon: FileCode2, href: "#projects" },
     { title: "Contáctame", icon: Mail, href: "#contact" },
   ]
 }

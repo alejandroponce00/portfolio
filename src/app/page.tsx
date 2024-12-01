@@ -259,9 +259,20 @@ function ProjectCard({
             <section className="mb-12">
               <MundoWrapper />
             </section>
+            <section id="about" className="mb-12">
+              <h2 className="text-2xl font-semibold mb-4 text-center">{t.aboutMe}</h2>
+              <p className="text-lg mb-4">{t.about}</p>
+              <h3 className="text-xl font-semibold mb-2">{t.skills}</h3>
+              <div className="flex flex-wrap gap-2">
+                <Badge variant="secondary" className="text-lg py-1 px-3">Next.js</Badge>
+                <Badge variant="secondary" className="text-lg py-1 px-3">Django</Badge>
+                <Badge variant="secondary" className="text-lg py-1 px-3">Tailwind CSS</Badge>
+                <Badge variant="secondary" className="text-lg py-1 px-3">PostgreSQL</Badge>
+              </div>
+            </section>
 
             <section id="projects" className="mb-12">
-              <h2 className="text-2xl font-semibold mb-4">{t.projects}</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-center">{t.projects}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <ProjectCard
                   title={t.halloween.title}
@@ -383,20 +394,10 @@ function ProjectCard({
               </div>
             </section>
 
-            <section id="about" className="mb-12">
-              <h2 className="text-2xl font-semibold mb-4">{t.aboutMe}</h2>
-              <p className="text-lg mb-4">{t.about}</p>
-              <h3 className="text-xl font-semibold mb-2">{t.skills}</h3>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="secondary" className="text-lg py-1 px-3">Next.js</Badge>
-                <Badge variant="secondary" className="text-lg py-1 px-3">Django</Badge>
-                <Badge variant="secondary" className="text-lg py-1 px-3">Tailwind CSS</Badge>
-                <Badge variant="secondary" className="text-lg py-1 px-3">PostgreSQL</Badge>
-              </div>
-            </section>
+            
 
             <section id="contact">
-              <h2 className="text-2xl font-semibold mb-4">{content.en.contactMe}</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-center">{t.contactMe}</h2>
               <div className="flex justify-center space-x-4">
                 <Button variant="outline" size="icon">
                   <a href="https://github.com/alejandroponce00" target="_blank" rel="noopener noreferrer">
@@ -420,6 +421,7 @@ function ProjectCard({
             </section>
           </main>
         </SidebarInset>
+        
       </div>
       
     </SidebarProvider>
