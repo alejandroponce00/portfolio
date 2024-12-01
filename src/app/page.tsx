@@ -31,6 +31,12 @@ const content = {
       website: "https://halloween-photo.vercel.app/",
       github: "https://github.com/alejandroponce00/halloween_photo",
     },
+    subtitulador: {
+      title: "Real Time Video Subtitler",
+      description: "This project is a web application built in Django that allows you to generate subtitles in the original language of a video and translate them into Spanish. You just have to upload the video, and the system takes care of the rest! 🌍",
+      website: "git@github.com:alejandroponce00/video_traductor_django.git",
+      github: "git@github.com:alejandroponce00/video_traductor_django.git",
+    },
     turnos: {
       title: "Mechanical workshop shifts",
       description: "Manage shifts in a mechanical workshop: record vehicles, owners, repairs and entry hours. Frontend deployed in vercel and backend in railway ",
@@ -119,6 +125,12 @@ const content = {
       description: "cambia el fondo de tu foto por uno de halloween,hecho con nextjs,tailwind y cloudinari",
       website: "https://halloween-photo.vercel.app/",
       github: "https://github.com/alejandroponce00/halloween_photo",
+    },
+    subtitulador: {
+      title: "Subtitulador de Videos en Tiempo Real",
+      description: "Este proyecto es una aplicación web construida en Django que permite generar subtítulos en el idioma original de un video y traducirlos al español. Solo debes subir el video, ¡y el sistema se encarga del resto! 🌍",
+      website: "git@github.com:alejandroponce00/video_traductor_django.git",
+      github: "git@github.com:alejandroponce00/video_traductor_django.git",
     },
     turnos: {
       title: "Turnos Taller",
@@ -298,6 +310,15 @@ function ProjectCard({
                   image="/imagenes/panel_mecanicos.png"
                   websiteUrl={t.panel_mecanicos.website}
                   githubUrl={t.panel_mecanicos.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
+                <ProjectCard
+                  title={t.subtitulador.title}
+                  description={t.subtitulador.description}
+                  image="/imagenes/subtitulador.png"
+                  websiteUrl={t.subtitulador.website}
+                  githubUrl={t.subtitulador.github}
                   visitWebsiteText={t.visitWebsite}
                   viewCodeText={t.viewCode}
                 />
