@@ -12,6 +12,7 @@ import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { ThemeToggle } from "@/components/theme-toggle"
 import MundoWrapper from "@/components/mundo-wrapper"
+import SimpleNextImage from "@/components/memogi"
 
 const content = {
   en: {
@@ -259,7 +260,17 @@ function ProjectCard({
         <SidebarInset>
           <main className="flex-1 p-8">
             <header className="mb-12 text-center">
-              <h1 className="text-4xl font-bold">{t.saludo}</h1>
+            <div className="flex items-center justify-center  gap-4">
+  <h1 className="text-4xl font-bold">{t.saludo}</h1>
+  <SimpleNextImage 
+    src="/imagenes/memogi.png" 
+    alt="Memogi" 
+    width={100} 
+    height={80} 
+  />
+</div>
+
+
               <p className="text-xl mt-2">{t.subtitle}</p>
             </header>
 
