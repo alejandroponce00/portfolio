@@ -263,7 +263,7 @@ function ProjectCard({
             <div className="flex items-center justify-center  gap-4">
   <h1 className="text-4xl font-bold">{t.saludo}</h1>
   <SimpleNextImage 
-    src="/imagenes/memogi.png" 
+    src="/imagenes/memogi.webp" 
     alt="Memogi" 
     width={100} 
     height={80} 
@@ -300,7 +300,7 @@ function ProjectCard({
                 <ProjectCard
                   title={t.halloween.title}
                   description={t.halloween.description}
-                  image="/imagenes/photo-halloween.png"
+                  image="/imagenes/photo-halloween.webp"
                   websiteUrl={t.halloween.website}
                   githubUrl={t.halloween.github}
                   visitWebsiteText={t.visitWebsite}
@@ -318,7 +318,7 @@ function ProjectCard({
                 <ProjectCard
                   title={t.panel_mecanicos.title}
                   description={t.panel_mecanicos.description}
-                  image="/imagenes/panel_mecanicos.png"
+                  image="/imagenes/panel_mecanicos.webp"
                   websiteUrl={t.panel_mecanicos.website}
                   githubUrl={t.panel_mecanicos.github}
                   visitWebsiteText={t.visitWebsite}
@@ -345,7 +345,7 @@ function ProjectCard({
                 <ProjectCard
                   title={t.clon_spotify.title}
                   description={t.clon_spotify.description}
-                  image="/imagenes/spotify-preview.png"
+                  image="/imagenes/spotify-preview.webp"
                   websiteUrl={t.clon_spotify.website}
                   githubUrl={t.clon_spotify.github}
                   visitWebsiteText={t.visitWebsite}
@@ -363,7 +363,7 @@ function ProjectCard({
                 <ProjectCard
                   title={t.chatbot_minecraft.title}
                   description={t.chatbot_minecraft.description}
-                  image="/imagenes/minecraft.png"
+                  image="/imagenes/minecraft.webp"
                   websiteUrl={t.chatbot_minecraft.website}
                   githubUrl={t.chatbot_minecraft.github}
                   visitWebsiteText={t.visitWebsite}
@@ -381,7 +381,7 @@ function ProjectCard({
                 <ProjectCard
                   title={t.Caja_comentarios.title}
                   description={t.Caja_comentarios.description}
-                  image="/imagenes/coment.png"
+                  image="/imagenes/coment.webp"
                   websiteUrl={t.Caja_comentarios.website}
                   githubUrl={t.Caja_comentarios.github}
                   visitWebsiteText={t.visitWebsite}
@@ -390,7 +390,7 @@ function ProjectCard({
                 <ProjectCard
                   title={t.Snake_juego.title}
                   description={t.Snake_juego.description}
-                  image="/imagenes/snake.png"
+                  image="/imagenes/snake.webp"
                   websiteUrl={t.Snake_juego.website}
                   githubUrl={t.Snake_juego.github}
                   visitWebsiteText={t.visitWebsite}
@@ -408,7 +408,7 @@ function ProjectCard({
                 <ProjectCard
                   title={t.marvel.title}
                   description={t.marvel.description}
-                  image="/imagenes/marvel.png"
+                  image="/imagenes/marvel.webp"
                   websiteUrl={t.marvel.website}
                   githubUrl={t.marvel.github}
                   visitWebsiteText={t.visitWebsite}
@@ -417,7 +417,7 @@ function ProjectCard({
                 <ProjectCard
                   title={t.artesana.title}
                   description={t.artesana.description}
-                  image="/imagenes/elefante.png"
+                  image="/imagenes/elefante.webp"
                   websiteUrl={t.artesana.website}
                   githubUrl={t.artesana.github}
                   visitWebsiteText={t.visitWebsite}
