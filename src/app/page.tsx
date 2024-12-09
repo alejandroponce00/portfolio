@@ -35,8 +35,8 @@ const content = {
     subtitulador: {
       title: "Real Time Video Subtitler",
       description: "This project is a web application built in Django that allows you to generate subtitles in the original language of a video and translate them into Spanish. You just have to upload the video, and the system takes care of the rest! 🌍",
-      website: "git@github.com:alejandroponce00/video_traductor_django.git",
-      github: "git@github.com:alejandroponce00/video_traductor_django.git",
+      website: "https://github.com/alejandroponce00/video_subtitulador",
+      github: "https://github.com/alejandroponce00/video_subtitulador",
     },
     turnos: {
       title: "Mechanical workshop shifts",
@@ -130,8 +130,8 @@ const content = {
     subtitulador: {
       title: "Subtitulador de Videos en Tiempo Real",
       description: "Este proyecto es una aplicación web construida en Django que permite generar subtítulos en el idioma original de un video y traducirlos al español. Solo debes subir el video, ¡y el sistema se encarga del resto! 🌍",
-      website: "git@github.com:alejandroponce00/video_traductor_django.git",
-      github: "git@github.com:alejandroponce00/video_traductor_django.git",
+      website: "https://github.com/alejandroponce00/video_subtitulador",
+      github: "https://github.com/alejandroponce00/video_subtitulador",
     },
     turnos: {
       title: "Turnos Taller",
