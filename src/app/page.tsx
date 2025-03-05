@@ -26,6 +26,12 @@ const content = {
     contactMe: "Contact Me",
     visitWebsite: "Visit Website",
     viewCode: "View Code",
+    Estacionamiento: {
+      title: "Parking Registration",
+      description: "Proyect in Next.js to register vehicles, license plates, and location. Connected to a Django backend, styled with Tailwind CSS, and includes validation. Deployed on Vercel with a PostgreSQL DB on Railway. 🚀",
+      website: "https://parking-frontend-theta.vercel.app//",
+      github: "https://github.com/alejandroponce00/parking_frontend",
+    },
     halloween: {
       title: "Halloween Wallpapers <Hackaton Cloudinary>",
       description: "change the background of your photo for a halloween one, made with nextjs, tailwind and cloudinari",
@@ -116,6 +122,12 @@ const content = {
     contactMe: "Contáctame",
     visitWebsite: "Visitar Sitio Web",
     viewCode: "Ver Código",
+    Estacionamiento: {
+      title: "Registro de Estacionamiento ",
+      description: "Proyecto en Next.js para ingresar vehículos, patente y ubicación. Conexión con backend Django, estilizado con Tailwind CSS y validación. Frontend desplegado en Vercel y backend con BD PostgreSQL en Railway. 🚀",
+      website: "https://parking-frontend-theta.vercel.app//",
+      github: "https://github.com/alejandroponce00/parking_frontend",
+    },
     halloween: {
       title: "Fondos de Halloween <Hackaton Cloudinary",
       description: "cambia el fondo de tu foto por uno de halloween,hecho con nextjs,tailwind y cloudinari",
@@ -215,27 +227,33 @@ function ProjectCard({
   viewCodeText: string;
 }) {
   return (
-    <Card className="dark:bg-gray-800">
-      <CardContent className="p-4">
-        <Image src={image} alt={title} width={300} height={200} className="rounded-lg mb-4" />
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="mb-4">{description}</p>
-      </CardContent>
-      <CardFooter className="flex justify-between">
-        <Button variant="outline" size="sm" asChild>
-          <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
-            <Globe className="mr-2 h-4 w-4" />
-            {visitWebsiteText}
-          </a>
-        </Button>
-        <Button variant="outline" size="sm" asChild>
-          <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-            <Code className="mr-2 h-4 w-4" />
-            {viewCodeText}
-          </a>
-        </Button>
-      </CardFooter>
-    </Card>
+    <Card className="dark:bg-gray-800 flex flex-col h-full">
+  <CardContent className="p-4 flex-grow">
+  <Image
+  src={image}
+  alt={title}
+  width={300}
+  height={200}
+  className="w-full h-[200px] object-cover rounded-lg mb-4"
+/>
+    <h3 className="text-xl font-semibold mb-2">{title}</h3>
+    <p className="mb-4">{description}</p>
+  </CardContent>
+  <CardFooter className="flex justify-between mt-auto">
+    <Button variant="outline" size="sm" asChild>
+      <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
+        <Globe className="mr-2 h-4 w-4" />
+        {visitWebsiteText}
+      </a>
+    </Button>
+    <Button variant="outline" size="sm" asChild>
+      <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+        <Code className="mr-2 h-4 w-4 mt-auto" />
+        {viewCodeText}
+      </a>
+    </Button>
+  </CardFooter>
+</Card>
   )
 }
 
@@ -287,6 +305,15 @@ function ProjectCard({
             <section id="projects" className="mb-12">
               <h2 className="text-2xl font-semibold mb-4 text-center">{t.projects}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <ProjectCard
+                  title={t.Estacionamiento.title}
+                  description={t.Estacionamiento.description}
+                  image="/imagenes/fronten_captura.webp"
+                  websiteUrl={t.Estacionamiento.website}
+                  githubUrl={t.Estacionamiento.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
                 <ProjectCard
                   title={t.halloween.title}
                   description={t.halloween.description}
@@ -420,7 +447,7 @@ function ProjectCard({
                   </a>
                 </Button>
                 <Button variant="outline" size="icon">
-                  <a href="https://www.linkedin.com/in/alberto-alejandro-ponce-2b832926b/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.linkedin.com/in/alejandro-ponce-2b832926b/" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="h-6 w-6" />
                     <span className="sr-only">LinkedIn</span>
                   </a>
