@@ -56,12 +56,7 @@ const content = {
       website: "https://client-todo-rho.vercel.app/",
       github: "https://github.com/alejandroponce00/client_todo",
     },
-    clon_spotify: {
-      title: "Clon spotify",
-      description: "spotify clone created with nextjs and tailwind",
-      website: "https://clon-spotify-tjoi.vercel.app/",
-      github: "https://github.com/alejandroponce00/clon-spotify",
-    },
+    
     cocinero_virtual: {
       title: "Virtual Chef <Hackaton Vercel>",
       description: "Show him the ingredients you have and he will help you cook something, created with nextjs, vercel sdk and perplexity api. Vercel displayed",
@@ -151,12 +146,7 @@ const content = {
       website: "https://client-todo-rho.vercel.app/",
       github: "https://github.com/alejandroponce00/client_todo",
     },
-    clon_spotify: {
-      title: "Clon spotify",
-      description: "Clon de Spotify creado con nextjs y taildwind",
-      website: "https://clon-spotify-tjoi.vercel.app/",
-      github: "https://github.com/alejandroponce00/clon-spotify",
-    },
+    
     cocinero_virtual: {
       title: "Cocinero Virtual <Hackaton Vercel>",
       description: "Muestrale los ingredientes que tienes y te ayudará a cocinar algo,creado con nextjs,vercel sdk y api de perplexity. Desplegado en vercel",
@@ -342,15 +332,7 @@ function ProjectCard({
                   visitWebsiteText={t.visitWebsite}
                   viewCodeText={t.viewCode}
                 />
-                <ProjectCard
-                  title={t.clon_spotify.title}
-                  description={t.clon_spotify.description}
-                  image="/imagenes/spotify-preview.webp"
-                  websiteUrl={t.clon_spotify.website}
-                  githubUrl={t.clon_spotify.github}
-                  visitWebsiteText={t.visitWebsite}
-                  viewCodeText={t.viewCode}
-                />
+               
                 <ProjectCard
                   title={t.cocinero_virtual.title}
                   description={t.cocinero_virtual.description}
