@@ -1,23 +1,22 @@
 "use client"
 
 import React, { Suspense } from 'react'
-import Spline from '@splinetool/react-spline';
+import Image from 'next/image';
+import oficina from '/public/imagenes/oficina.webp';
 
-function SplineComponent() {
+
+export default function SplineComponent() {
   return (
-    <Spline
-      scene="https://prod.spline.design/cNo8mBadIjzxJ1x6/scene.splinecode"
+    <Image 
+      src={oficina} 
+      alt="Oficina" 
+      width={500} 
+      height={500} 
+      className="mx-auto"
     />
   )
 }
 
-export default function Mundo() {
-  return (
-    
-      <Suspense fallback={<div>Loading 3D model...</div>}>
-        <SplineComponent />
-      </Suspense>
-    
-  )
-}
+
+
 
