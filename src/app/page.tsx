@@ -105,12 +105,7 @@ const content = {
       website: "https://ojosdecieloarte.netlify.app/",
       github: "https://github.com/alejandroponce00/ojos-de-cielo",
     },
-    marvel: {
-      title: "Marvel Api",
-      description: "Page created to consume a marvel api using nextjs and axios",
-      website: "https://marvel-api-ale.netlify.app/",
-      github: "https://github.com/alejandroponce00/api-marvel",
-    },
+    
     artesana: {
       title: "ArteSana Mosaics",
       description: "Page created for a mosaic artist displayed on github pages",
@@ -207,12 +202,7 @@ const content = {
       website: "https://ojosdecieloarte.netlify.app/",
       github: "https://github.com/alejandroponce00/ojos-de-cielo",
     },
-    marvel: {
-      title: "Marvel Api",
-      description: "Pagina creada para consumir una api de marvel usando nextjs y axios ",
-      website: "https://marvel-api-ale.netlify.app/",
-      github: "https://github.com/alejandroponce00/api-marvel",
-    },
+   
     artesana: {
       title: "ArteSana Mosaicos",
       description: "Pagina creada para una artista de mosaiquismo desplegada en github pages  ",
@@ -436,15 +426,7 @@ function ProjectCard({
                   visitWebsiteText={t.visitWebsite}
                   viewCodeText={t.viewCode}
                 />
-                <ProjectCard
-                  title={t.marvel.title}
-                  description={t.marvel.description}
-                  image="/imagenes/marvel.webp"
-                  websiteUrl={t.marvel.website}
-                  githubUrl={t.marvel.github}
-                  visitWebsiteText={t.visitWebsite}
-                  viewCodeText={t.viewCode}
-                />
+                
                 <ProjectCard
                   title={t.artesana.title}
                   description={t.artesana.description}
