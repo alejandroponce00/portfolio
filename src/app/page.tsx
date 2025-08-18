@@ -26,6 +26,13 @@ const content = {
     contactMe: "Contact Me",
     visitWebsite: "Visit Website",
     viewCode: "View Code",
+
+    Productos: {
+      title: "Final project for the Node.js course at Talento Tech",
+      description: "REST API built with Node.js and Express, connected to Firebase Firestore, and deployed on Railway, with a Vercel frontend. It implements a layered architecture, CORS handling for local/production, and credential management using environment variables. It includes full CRUD operations on products.",
+      website: "https://front-proy-final-node.vercel.app/",
+      github: "https://github.com/alejandroponce00/proy_final_node",
+    },
     Estacionamiento: {
       title: "Parking Registration",
       description: "Proyect in Next.js to register vehicles, license plates, and location. Connected to a Django backend, styled with Tailwind CSS, and includes validation. Deployed on Vercel with a PostgreSQL DB on Railway. 🚀",
@@ -122,6 +129,12 @@ const content = {
     contactMe: "Contáctame",
     visitWebsite: "Visitar Sitio Web",
     viewCode: "Ver Código",
+    Productos: {
+      title: "Proyecto final del curso de Node.js en Talento Tech",
+      description: "API REST construida con Node.js y Express, conectada a Firebase Firestore y desplegada en Railway, con frontend en Vercel. Implementa arquitectura en capas, manejo de CORS para local/producción y gestión de credenciales mediante variables de entorno. Incluye operaciones CRUD completas sobre productos.",
+      website: "https://front-proy-final-node.vercel.app/",
+      github: "https://github.com/alejandroponce00/proy_final_node",
+    },
     Estacionamiento: {
       title: "Registro de Estacionamiento ",
       description: "Proyecto en Next.js para ingresar vehículos, patente y ubicación. Conexión con backend Django, estilizado con Tailwind CSS y validación. Frontend desplegado en Vercel y backend con BD PostgreSQL en Railway. 🚀",
@@ -306,6 +319,15 @@ function ProjectCard({
               <h2 className="text-2xl font-semibold mb-4 text-center">{t.projects}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <ProjectCard
+                  title={t.Productos.title}
+                  description={t.Productos.description}
+                  image="/imagenes/products.webp"
+                  websiteUrl={t.Productos.website}
+                  githubUrl={t.Productos.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
+                <ProjectCard
                   title={t.Estacionamiento.title}
                   description={t.Estacionamiento.description}
                   image="/imagenes/fronten_captura.webp"
