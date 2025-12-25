@@ -27,6 +27,12 @@ const content = {
     visitWebsite: "Visit Website",
     viewCode: "View Code",
 
+    Ropa_shop: {
+      title: "Final project for the Reactjs course at Talento Tech",
+      description: "It is an e-commerce application developed with React and Vite.js, connected to a custom backend deployed on Vercel for managing products and users, and it uses Firebase as a cloud database to ensure data persistence and real-time synchronization.",
+      website: "https://preentrega-alejandro-ponce.vercel.app/",
+      github: "https://github.com/alejandroponce00/preentrega-Alejandro-Ponce",
+    },
     Productos: {
       title: "Final project for the Node.js course at Talento Tech",
       description: "REST API built with Node.js and Express, connected to Firebase Firestore, and deployed on Railway, with a Vercel frontend. It implements a layered architecture, CORS handling for local/production, and credential management using environment variables. It includes full CRUD operations on products.",
@@ -124,6 +130,12 @@ const content = {
     contactMe: "Contáctame",
     visitWebsite: "Visitar Sitio Web",
     viewCode: "Ver Código",
+    Ropa_shop: {
+      title: "Proyecto final del curso de Reactjs en Talento Tech",
+      description: "Es una aplicación de comercio electrónico desarrollada con React y Vite.js, conectada a un backend personalizado desplegado en Vercel para la gestión de productos y usuarios, y utiliza Firebase como base de datos en la nube para garantizar la persistencia de datos y la sincronización en tiempo real.",
+      website: "https://preentrega-alejandro-ponce.vercel.app/",
+      github: "https://github.com/alejandroponce00/preentrega-Alejandro-Ponce",
+    },
     Productos: {
       title: "Proyecto final del curso de Node.js en Talento Tech",
       description: "API REST construida con Node.js y Express, conectada a Firebase Firestore y desplegada en Railway, con frontend en Vercel. Implementa arquitectura en capas, manejo de CORS para local/producción y gestión de credenciales mediante variables de entorno. Incluye operaciones CRUD completas sobre productos.",
@@ -308,6 +320,15 @@ function ProjectCard({
             <section id="projects" className="mb-12">
               <h2 className="text-2xl font-semibold mb-4 text-center">{t.projects}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <ProjectCard
+                  title={t.Ropa_shop.title}
+                  description={t.Ropa_shop.description}
+                  image="/imagenes/mi_ropa.png"
+                  websiteUrl={t.Ropa_shop.website}
+                  githubUrl={t.Ropa_shop.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
               <ProjectCard
                   title={t.Productos.title}
                   description={t.Productos.description}
