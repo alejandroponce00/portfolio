@@ -187,7 +187,7 @@ const content = {
     },
    Caja_comentarios: {
       title: "Caja de comentarios",
-      description: "Creada con django conectada a una base de datos postgres y desplegada en railway",
+      description: "Creada con django conectada a una base de datos PostgreSql y desplegada en railway",
       website: "https://comentariosrender-production.up.railway.app/",
       github: "https://github.com/alejandroponce00/comentarios_render",
     },
