@@ -247,9 +247,9 @@ function ProjectCard({
   <Image
   src={image}
   alt={title}
-  width={300}
-  height={200}
-  className="w-full h-[200px] object-cover rounded-lg mb-4"
+  width={500}
+  height={350}
+  className="w-full max-w-[300px] h-auto object-cover rounded-lg mb-4 mx-auto"
 />
     <h3 className="text-xl font-semibold mb-2">{title}</h3>
     <p className="mb-4">{description}</p>
