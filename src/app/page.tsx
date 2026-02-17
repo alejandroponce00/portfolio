@@ -26,7 +26,12 @@ const content = {
     contactMe: "Contact Me",
     visitWebsite: "Visit Website",
     viewCode: "View Code",
-
+    DeporteScan: {
+      title: "DeporteScan",
+      description: "A frontend web application developed with Next.js that displays offers of sports products from multiple stores, connected to a Node.js backend with a database in Firebase Firestore.",
+      website: "https://scrap-ofertas-front.vercel.app/",
+      github: "https://github.com/alejandroponce00/scrap_ofertas_front",
+    },
     Ropa_shop: {
       title: "Final project for the Reactjs course at Talento Tech",
       description: "It is an e-commerce application developed with React and Vite.js, connected to a custom backend deployed on Vercel for managing products and users, and it uses Firebase as a cloud database to ensure data persistence and real-time synchronization.",
@@ -130,6 +135,12 @@ const content = {
     contactMe: "Contáctame",
     visitWebsite: "Visitar Sitio Web",
     viewCode: "Ver Código",
+    DeporteScan: {
+      title: "DeporteScan",
+      description: "Aplicación web frontend desarrollada con Next.js que muestra ofertas de productos deportivos desde múltiples tiendas, conectada a un backend Node.js con base de datos en Firebase Firestore.",
+      website: "https://scrap-ofertas-front.vercel.app/",
+      github: "https://github.com/alejandroponce00/scrap_ofertas_front",
+    },
     Ropa_shop: {
       title: "Proyecto final del curso de Reactjs en Talento Tech",
       description: "Es una aplicación de comercio electrónico desarrollada con React y Vite.js, conectada a un backend personalizado desplegado en Vercel para la gestión de productos y usuarios, y utiliza Firebase como base de datos en la nube para garantizar la persistencia de datos y la sincronización en tiempo real.",
@@ -320,6 +331,15 @@ function ProjectCard({
             <section id="projects" className="mb-12">
               <h2 className="text-2xl font-semibold mb-4 text-center">{t.projects}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <ProjectCard
+                  title={t.DeporteScan.title}
+                  description={t.DeporteScan.description}
+                  image="/imagenes/DeporteScan.png"
+                  websiteUrl={t.DeporteScan.website}
+                  githubUrl={t.DeporteScan.github}
+                  visitWebsiteText={t.visitWebsite}
+                  viewCodeText={t.viewCode}
+                />
               <ProjectCard
                   title={t.Ropa_shop.title}
                   description={t.Ropa_shop.description}
