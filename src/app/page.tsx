@@ -334,7 +334,7 @@ function ProjectCard({
               <ProjectCard
                   title={t.DeporteScan.title}
                   description={t.DeporteScan.description}
-                  image="/imagenes/DeporteScan.png"
+                  image="/imagenes/deporteScan.png"
                   websiteUrl={t.DeporteScan.website}
                   githubUrl={t.DeporteScan.github}
                   visitWebsiteText={t.visitWebsite}
