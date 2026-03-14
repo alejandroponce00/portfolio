@@ -7,12 +7,13 @@ import { Github, Linkedin, Mail, Globe, Code } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card"
 import { AppSidebar } from "@/components/app-sidebar"
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { ThemeToggle } from "@/components/theme-toggle"
 import MundoWrapper from "@/components/mundo-wrapper"
-import SimpleNextImage from "@/components/memogi"
+import AuroraBackgroundDemo from "@/components/ui/aurora-background-demo"
 
 const content = {
   en: {
@@ -93,17 +94,7 @@ const content = {
       website: "https://minecraft-asistente.vercel.app/",
       github: "https://github.com/alejandroponce00/minecraft_asistente",
     },
-    clon_twitter: {
-      title: "X Clon (twitter)",
-      description: "Twitter clone created with nextjs and shadcn ",
-      website: "https://twitter-clon-nu.vercel.app//",
-      github: "https://github.com/alejandroponce00/twitter_clon",
-    },Caja_comentarios: {
-      title: "Comment box",
-      description: "Created with django connected to a postgres database and deployed to railway",
-      website: "https://comentariosrender-production.up.railway.app/",
-      github: "https://github.com/alejandroponce00/comentarios_render",
-    },
+    
     Snake_juego: {
       title: "Snake(game)",
       description: "popular snake game created with react and deployed in vercel",
@@ -202,18 +193,8 @@ const content = {
       website: "https://minecraft-asistente.vercel.app/",
       github: "https://github.com/alejandroponce00/minecraft_asistente",
     },
-    clon_twitter: {
-      title: "Clon de X (twitter)",
-      description: "Clon de twitter creado con nextjs y shadcn ",
-      website: "https://twitter-clon-nu.vercel.app//",
-      github: "https://github.com/alejandroponce00/twitter_clon",
-    },
-   Caja_comentarios: {
-      title: "Caja de comentarios",
-      description: "Creada con django conectada a una base de datos PostgreSql y desplegada en railway",
-      website: "https://comentariosrender-production.up.railway.app/",
-      github: "https://github.com/alejandroponce00/comentarios_render",
-    },
+    
+   
     Snake_juego: {
       title: "Snake(juego)",
       description: "popular juego de la serpiente creado con react y desplegado en vercel",
@@ -253,33 +234,57 @@ function ProjectCard({
   viewCodeText: string;
 }) {
   return (
-    <Card className="dark:bg-gray-800 flex flex-col h-full">
-  <CardContent className="p-4 flex-grow">
-  <Image
-  src={image}
-  alt={title}
-  width={500}
-  height={350}
-  className="w-full max-w-[300px] h-auto object-cover rounded-lg mb-4 mx-auto"
-/>
-    <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p className="mb-4">{description}</p>
-  </CardContent>
-  <CardFooter className="flex justify-between mt-auto">
-    <Button variant="outline" size="sm" asChild>
-      <a href={websiteUrl} target="_blank" rel="noopener noreferrer">
-        <Globe className="mr-2 h-4 w-4" />
-        {visitWebsiteText}
-      </a>
-    </Button>
-    <Button variant="outline" size="sm" asChild>
-      <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-        <Code className="mr-2 h-4 w-4 mt-auto" />
-        {viewCodeText}
-      </a>
-    </Button>
-  </CardFooter>
-</Card>
+    
+    <CardContainer className="inter-var">
+      <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-gray-800 dark:border-white/[0.2] border-black/[0.1] w-full h-[400px] sm:h-[450px] rounded-xl p-4 border flex flex-col">
+        <CardItem translateZ="50" className="w-full">
+          <Image
+            src={image}
+            alt={title}
+            width={500}
+            height={350}
+            className="w-full h-48 object-cover rounded-lg mb-4"
+          />
+        </CardItem>
+        <CardItem
+          translateZ="60"
+          className="text-xl font-bold text-neutral-600 dark:text-white"
+        >
+          {title}
+        </CardItem>
+        <CardItem
+          as="p"
+          translateZ="70"
+          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 flex-grow overflow-hidden line-clamp-3"
+        >
+          {description}
+        </CardItem>
+        <div className="flex justify-between items-center mt-auto">
+          <CardItem
+            translateZ={20}
+            as="a"
+            href={websiteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white border border-gray-300 dark:border-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+          >
+            <Globe className="inline mr-2 h-4 w-4" />
+            {visitWebsiteText}
+          </CardItem>
+          <CardItem
+            translateZ={20}
+            as="a"
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+          >
+            <Code className="inline mr-2 h-4 w-4" />
+            {viewCodeText}
+          </CardItem>
+        </div>
+      </CardBody>
+    </CardContainer>
   )
 }
 
@@ -293,15 +298,12 @@ function ProjectCard({
         <AppSidebar />
         <SidebarInset>
           <main className="flex-1 p-8">
+              
+            <AuroraBackgroundDemo />
             <header className="mb-12 text-center">
             <div className="flex items-center justify-center  gap-4">
   <h1 className="text-4xl font-bold">{t.saludo}</h1>
-  <SimpleNextImage 
-    src="/imagenes/memogi.webp" 
-    alt="Memogi" 
-    width={100} 
-    height={80} 
-  />
+  
 </div>
 
 
@@ -313,9 +315,7 @@ function ProjectCard({
               <ThemeToggle />
             </div>
 
-            <section className="mb-12">
-              <MundoWrapper />
-            </section>
+            
             <section id="about" className="mb-12">
               <h2 className="text-2xl font-semibold mb-4 text-center">{t.aboutMe}</h2>
               <p className="text-lg mb-4">{t.about}</p>
@@ -330,7 +330,7 @@ function ProjectCard({
 
             <section id="projects" className="mb-12">
               <h2 className="text-2xl font-semibold mb-4 text-center">{t.projects}</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-7xl mx-auto">
               <ProjectCard
                   title={t.DeporteScan.title}
                   description={t.DeporteScan.description}
@@ -431,24 +431,8 @@ function ProjectCard({
                   visitWebsiteText={t.visitWebsite}
                   viewCodeText={t.viewCode}
                 />
-                <ProjectCard
-                  title={t.clon_twitter.title}
-                  description={t.clon_twitter.description}
-                  image="/imagenes/twiterclonprev.png"
-                  websiteUrl={t.clon_twitter.website}
-                  githubUrl={t.clon_twitter.github}
-                  visitWebsiteText={t.visitWebsite}
-                  viewCodeText={t.viewCode}
-                />
-                <ProjectCard
-                  title={t.Caja_comentarios.title}
-                  description={t.Caja_comentarios.description}
-                  image="/imagenes/coment.webp"
-                  websiteUrl={t.Caja_comentarios.website}
-                  githubUrl={t.Caja_comentarios.github}
-                  visitWebsiteText={t.visitWebsite}
-                  viewCodeText={t.viewCode}
-                />
+                
+                
                 <ProjectCard
                   title={t.Snake_juego.title}
                   description={t.Snake_juego.description}

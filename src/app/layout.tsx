@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/contexts/LanguageContext"
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -20,10 +21,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <LanguageProvider>
+            
             {children}
             <footer className="bg-gray-200 dark:bg-gray-800 py-4 text-center">
-        <p>&copy; 2023 Alejandro Ponce. All rights reserved.</p>
-      </footer>
+              <p>&copy; 2023 Alejandro Ponce. All rights reserved.</p>
+            </footer>
           </LanguageProvider>
         </ThemeProvider>
         
