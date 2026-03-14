@@ -5,14 +5,14 @@ import Image from "next/image"
 import { Github, Linkedin, Mail, Globe, Code } from 'lucide-react'
 
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
+
 import { Badge } from "@/components/ui/badge"
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card"
 import { AppSidebar } from "@/components/app-sidebar"
 import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { ThemeToggle } from "@/components/theme-toggle"
-import MundoWrapper from "@/components/mundo-wrapper"
+
 import AuroraBackgroundDemo from "@/components/ui/aurora-background-demo"
 
 const content = {
